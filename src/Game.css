@@ -4,8 +4,6 @@
   width: 500px;
   height: 400px;
   margin: 0 auto;
-
-
 }
 
 .score {
@@ -13,7 +11,7 @@
   margin-top: 50px;
 }
 
-.time {
+.time { 
   margin-right: 450px;
   margin-top: 50px;
 }
