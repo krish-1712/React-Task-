@@ -1,0 +1,70 @@
+/* NestedList.css */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parent {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.parent h2 {
+    margin: 0;
+    color: #333;
+}
+
+.parent:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+}
+
+.child {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.child-open ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.child-open ul li {
+    margin-bottom: 5px;
+}
+
+.child-open {
+    background-color: #e0e0e0;
+}
+
+.grandchild {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.grandchild:hover {
+    background-color: #e0e0e0;
+}
+
+.grandchild:hover {
+    background-color: #f0f0f0;
+}

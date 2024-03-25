@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.bucket1, .bucket2 {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  width: 200px;
+  height: 480px; 
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+}
+.num{
+  margin-left: 60px;
+}
+
+.bucket1 {
+  margin-left: 370px;
+}
+
+.bucket2 {
+  margin-right: 340px;
+}
+
+.bucket1 button {
+  margin-top: 30px;
+  width: calc(100% - 20px); /* Adjust button width */
+  margin-bottom: 10px; /* Add margin-bottom to create spacing between buttons */
+}
+
+.bucket2 button {
+  margin-top: 30px;
+  width: calc(100% - 20px); /* Adjust button width */
+  margin-bottom: 20px; /* Add margin-bottom to create spacing between buttons */
+}
+
+.add {
+  margin-top: 160px;
+  width: 100px;
+  height: 20px;
+}
+.remove {
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+}
+.addall {
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+}
+.removeall {
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+
