@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './Navbar.css'
 
-const Navbar = ({children}) => {
+const Navbar = ({ children }) => {
     return (
         <div className='loot'>
             <div className="cont">

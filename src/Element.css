@@ -29,14 +29,13 @@
 
 .bucket1 button {
   margin-top: 30px;
-  width: calc(100% - 20px); /* Adjust button width */
-  margin-bottom: 10px; /* Add margin-bottom to create spacing between buttons */
+  width: calc(100% - 20px); 
+  margin-bottom: 10px; 
 }
-
 .bucket2 button {
   margin-top: 30px;
-  width: calc(100% - 20px); /* Adjust button width */
-  margin-bottom: 20px; /* Add margin-bottom to create spacing between buttons */
+  width: calc(100% - 20px);
+  margin-bottom: 20px; 
 }
 
 .add {

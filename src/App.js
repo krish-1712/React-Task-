@@ -19,12 +19,6 @@ function App() {
         <Route path="/game" element={<Game/>} />
         <Route path="/" element={ <Element/>} />
         <Route path="/nested" element={<NestedList/>} />
-   
-
-       
-
-
-   
       </Routes>
     </BrowserRouter>
   );

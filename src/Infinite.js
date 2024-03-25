@@ -41,36 +41,36 @@ const Infinite = () => {
 
     return (
         <Navbar>
-        <div>
-            <h1>Rest Countries</h1>
-            <div className="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Country</th>
-                            <th>Capital</th>
-                            <th>Region</th>
-                            <th>Population</th>
-                            <th>LatLang</th>
-                            <th>Flag</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.map((item, index) => (
-                            <tr key={index}>
-                                <td>{item.name.common}</td>
-                                <td>{item.capital}</td>
-                                <td>{item.region}</td>
-                                <td>{item.population}</td>
-                                <td>{item.latlng}</td>
-                                <td>{item.flag}</td>
+            <div>
+                <h1>Rest Countries</h1>
+                <div className="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Capital</th>
+                                <th>Region</th>
+                                <th>Population</th>
+                                <th>LatLang</th>
+                                <th>Flag</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-                {loading && <p>Loading...</p>}
+                        </thead>
+                        <tbody>
+                            {data.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{item.name.common}</td>
+                                    <td>{item.capital}</td>
+                                    <td>{item.region}</td>
+                                    <td>{item.population}</td>
+                                    <td>{item.latlng}</td>
+                                    <td>{item.flag}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                    {loading && <p>Loading...</p>}
+                </div>
             </div>
-        </div>
         </Navbar>
     )
 }

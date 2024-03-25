@@ -1,56 +1,23 @@
-/* .game-board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-  }
-  
-  .box {
-    border: 1px solid #000;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  
-  .keyword {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: yellow;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .scoreboard {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  button {
-    margin-top: 20px;
-  }
-   */
-
 .game-board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 500px; 
+  width: 500px;
   height: 400px;
-  margin: 0 auto; 
+  margin: 0 auto;
 
 
 }
-.score{
-    margin-left: 450px;
-    margin-top: 50px;
+
+.score {
+  margin-left: 450px;
+  margin-top: 50px;
 }
-.time{
-    margin-right: 450px;
-    margin-top: 50px;
+
+.time {
+  margin-right: 450px;
+  margin-top: 50px;
 }
+
 .box {
   border: 1px solid #000;
   padding: 20px;
@@ -75,32 +42,32 @@
 .scoreboard {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px; /* Add margin to separate scoreboard from game board */
+  margin-bottom: 10px;
 }
 
 
 .start {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    margin-left: 450px;
-    margin-top: 20px;
-  }
-  
-  .start:hover {
-    background-color: #45a049; /* Darker green */
-  }
-  
-  .start:disabled {
-    background-color: #cccccc; /* Grey */
-    cursor: not-allowed;
-  }
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-left: 450px;
+  margin-top: 20px;
+}
+
+.start:hover {
+  background-color: #45a049;
+}
+
+.start:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
