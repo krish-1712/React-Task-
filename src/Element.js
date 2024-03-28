@@ -7,23 +7,28 @@ const Element = () => {
     const [bucket2, setBucket2] = useState(['Item 4', 'Item 6'].map(item => ({ name: item, selected: false })));
 
     const handleAddToBucket2 = () => {
-        const selectedItems = bucket1.filter(item => item.selected);
-        setBucket2(prevState => [...prevState, ...selectedItems]);
-        setBucket1(prevState => prevState.filter(item => !item.selected));
+        const selectedItem = bucket1.find(item => item.selected);
+        if (selectedItem) {
+            setBucket2(prevState => [...prevState, selectedItem]);
+            setBucket1(prevState => prevState.filter(item => item !== selectedItem));
+        }
     };
-
-
+    
 
     const handleAddAllToBucket2 = () => {
         setBucket2(prevState => [...prevState, ...bucket1]);
         setBucket1([]);
     };
 
+
     const handleRemoveFromBucket2 = () => {
-        const selectedItems = bucket2.filter(item => item.selected);
-        setBucket1(prevState => [...prevState, ...selectedItems]);
-        setBucket2(prevState => prevState.filter(item => !item.selected));
+        const selectedItem = bucket2.find(item => item.selected);
+        if (selectedItem) {
+            setBucket1(prevState => [...prevState, selectedItem]);
+            setBucket2(prevState => prevState.filter(item => item !== selectedItem));
+        }
     };
+
 
     const handleRemoveAllFromBucket2 = () => {
         setBucket1(prevState => [...prevState, ...bucket2]);
