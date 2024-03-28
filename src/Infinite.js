@@ -11,18 +11,17 @@ const Infinite = () => {
         fetchData();
     }, []);
 
-    const fetchData = () => {
+    const fetchData = async () => {
         setLoading(true);
-        axios.get(`https://restcountries.com/v3.1/all`)
-            .then(response => {
-                setData(prevData => [...prevData, ...response.data]);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error('Error fetching data: ', error);
-                setLoading(false);
-            });
+        try {
+            const response = await axios.get(`https://restcountries.com/v3.1/all`);
+            setData(prevData => [...prevData, ...response.data]);
+        } catch (error) {
+            console.error('Error fetching data: ', error);
+        }
+        setLoading(false);
     };
+    
 
     const handleScroll = () => {
         const distanceFromBottom = document.documentElement.offsetHeight - (window.innerHeight + window.scrollY);
